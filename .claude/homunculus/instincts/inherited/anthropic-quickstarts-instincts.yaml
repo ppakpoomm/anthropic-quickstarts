@@ -1,0 +1,278 @@
+# Instincts generated from https://github.com/ppakpoomm/anthropic-quickstarts
+# Generated: 2026-05-14T04:07:37.585Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: anthropic-quickstarts-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Commit Length
+
+## Action
+
+Keep commit messages concise (~49 characters)
+
+## Evidence
+
+- Average commit message length: 49 chars
+- Based on 1 commits
+
+---
+id: anthropic-quickstarts-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: anthropic-quickstarts-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: anthropic-quickstarts-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: anthropic-quickstarts-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.ts
+
+## Evidence
+
+- File pattern: *.test.ts
+- Consistent across test files
+
+---
+id: anthropic-quickstarts-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct File Naming
+
+## Action
+
+Name the file using snake_case
+
+## Evidence
+
+- Pattern in namingConventions.files: snake_case
+
+---
+id: anthropic-quickstarts-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: anthropic-quickstarts-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: anthropic-quickstarts-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: anthropic-quickstarts-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: anthropic-quickstarts-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: anthropic-quickstarts-instinct-test-file-pattern
+trigger: "When creating a test file"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Test File Pattern
+
+## Action
+
+Name the file with the pattern *.test.ts
+
+## Evidence
+
+- Pattern in testing.filePattern: *.test.ts
+
+---
+id: anthropic-quickstarts-instinct-test-type
+trigger: "When writing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Test Type
+
+## Action
+
+Write unit tests
+
+## Evidence
+
+- Pattern in testing.testTypes: unit
+
+---
+id: anthropic-quickstarts-instinct-commit-format
+trigger: "When making a git commit"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: ppakpoomm/anthropic-quickstarts
+---
+
+# Anthropic Quickstarts Instinct Commit Format
+
+## Action
+
+Write a short, descriptive commit message without a specific prefix
+
+## Evidence
+
+- Pattern in commits.examples: 'Add computer-use-best-practices quickstart (#402)'
+- Pattern in commits.prefixes: []
+
